@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css"/>
+
+    <style>
+        ul {
+            border: 1px solid;
+            display: grid;
+            gap: 8px;
+            row-gap: 12px;
+            column-gap: 4px;
+            list-style: none;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            
+        }
+        
+        li {
+            width: 200px;
+            flex-shrink: 1;
+            height: 200px;
+            background-color: violet;
+        }
+
+        .third {
+            background-color: red;
+            color: orange;
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+        }
+        .badge {
+            background-color: aliceblue;
+            color: white;
+            border-radius: 100px;
+            padding: 8px 16px;
+            position: fixed;
+            
+        }
+    
+
+        li:first-child {
+            width: 900px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <li>B</li>
+    <li>O</li>
+    <li>R</li>
+    <li>I</li>
+    <li>S</li>
+</body>
+</html>
