@@ -37,15 +37,16 @@
 // let num2 = 6;
 // let num3 = 0;
 // Ответ -infinity
-// let num1 = 100;
-// let num2 = 9;
-// let num3 = 3;
+let num1 = 100;
+let num2 = 9;
+let num3 = 3;
 // Ответ: 97
 
-// function manyMathOperations() {
-//     return num1 - num2 / num3;
-// }
-// console.log(manyMathOperations(num1, num2, num3))
+function manyMathOperations() {
+    minus = num1 - num2;
+    equal = minus / num3;
+}
+console.log(manyMathOperations(num1, num2, num3))
 
 // 4. День недели.
 // let day = 10;
